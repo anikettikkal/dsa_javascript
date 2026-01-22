@@ -23,13 +23,48 @@
 
 // get an value from user 
 
-const prompt = require("prompt-sync")(); // import this for get an values from user
+// const prompt = require("prompt-sync")(); // import this for get an values from user
 
 
-let age  = prompt("enter your age -") // typeof output is string so we convert it into number using Number()
-age = Number(age) // called type casting or type conversion
-console.log(age);
+// let age  = prompt("enter your age -") // typeof output is string so we convert it into number using Number()
+// age = Number(age) // called type casting or type conversion
+// console.log(age);
 
+
+
+
+// swap variable via three methods
+
+// 1. swap with extra variable
+
+// let a = 10
+// let b = 20
+// let c; 
+// c = a ; // c=10 and a=10
+// a = b ; // a=20 and b=20
+// b = c ; // b=10 
+
+// console.log(a);
+// console.log(b);
+// console.log(c);
+
+// 2. without using extra variable
+
+// let a = 200
+// let b = 50
+// a = a+b ; // 250
+// b = a-b ; // 200
+// a = a-b ;
+// console.log(a);
+// console.log(b);
+
+// 3. swap using destructring
+
+let a =20;
+let b =39;
+
+[a,b] = [b,a];
+console.log(a,b);
 
 
 
