@@ -53,41 +53,93 @@ const prompt = require("prompt-sync")();
 
 // Inr denomination
 
-let amount = 1856 ;
-if (amount>=500) {
-    console.log("500 rupee notes: " + Math.floor(amount/500));
-    amount = amount % 500;
-}
-if (amount>=200) {
-    console.log("200 rupee notes: " + Math.floor(amount/200));
-    amount = amount % 200;
-}
-if (amount>=100) {
-    console.log("100 rupee notes: " + Math.floor(amount/100));
-    amount = amount % 100;
-}
-if (amount>=50) {
-    console.log("50 rupee notes: " + Math.floor(amount/50));
-    amount = amount % 50;
-}
-if (amount>=20) {
-    console.log("20 rupee notes: " + Math.floor(amount/20));
-    amount = amount % 20;
-}
-if (amount>=10) {
-    console.log("10 rupee notes: " + Math.floor(amount/10));
-    amount = amount % 10;
-}
-if (amount>=5) {
-    console.log("5 rupee notes: " + Math.floor(amount/5));
-    amount = amount % 5;
-}
-if (amount>=2) {
-    console.log("2 rupee notes: " + Math.floor(amount/2));
-    amount = amount % 2;
-}
-if (amount>=1) {
-    console.log("1 rupee notes: " + Math.floor(amount/1));
-    amount = amount % 1;
+// let amount = 1856 ;
+// if (amount>=500) {
+//     console.log("500 rupee notes: " + Math.floor(amount/500));
+//     amount = amount % 500;
+// }
+// if (amount>=200) {
+//     console.log("200 rupee notes: " + Math.floor(amount/200));
+//     amount = amount % 200;
+// }
+// if (amount>=100) {
+//     console.log("100 rupee notes: " + Math.floor(amount/100));
+//     amount = amount % 100;
+// }
+// if (amount>=50) {
+//     console.log("50 rupee notes: " + Math.floor(amount/50));
+//     amount = amount % 50;
+// }
+// if (amount>=20) {
+//     console.log("20 rupee notes: " + Math.floor(amount/20));
+//     amount = amount % 20;
+// }
+// if (amount>=10) {
+//     console.log("10 rupee notes: " + Math.floor(amount/10));
+//     amount = amount % 10;
+// }
+// if (amount>=5) {
+//     console.log("5 rupee notes: " + Math.floor(amount/5));
+//     amount = amount % 5;
+// }
+// if (amount>=2) {
+//     console.log("2 rupee notes: " + Math.floor(amount/2));
+//     amount = amount % 2;
+// }
+// if (amount>=1) {
+//     console.log("1 rupee notes: " + Math.floor(amount/1));
+//     amount = amount % 1;
+// }
+
+
+
+// ternary operator ? :
+
+// code ? true ka code : false ka code
+
+// 112>24 ? console.log("huuhuuu"): console.log("heyeheyee");
+
+// nested ternary operator
+
+// let num =-18;
+// console.log(num>0 ?"positive":num<0 ?"negative":"zero");
+
+// switch case
+
+// let day= 4;
+// switch(day){
+//     case 1: console.log("Sunday");
+//     break;
+//     case 2: console.log("Monday");
+//     break;
+//     default: console.log("Invalid Day");
+// }
+
+
+// let day= 2;
+// switch(day){
+//     case 1: 
+//     case 2:
+//     case 3:
+//         console.log("Working Day");
+//         break; 
+//     default: console.log("Invalid Day");
+// }
+
+switch(true){
+    case 112<24: console.log("huuhuuu");
+    break;
+    case 45>78: console.log("heyeheyee");
+    break;
+    default: console.log("no match");
 }
 
+let num = 0.1+0.2;
+num = Number(num.toFixed(1));
+switch(num){
+    case 0.5: console.log("Its 0.5");
+    break;
+    case 0.3: console.log("Its 0.3");
+    break;
+    default: console.log("No Match");
+}
